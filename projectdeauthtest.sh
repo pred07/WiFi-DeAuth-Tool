@@ -14,6 +14,10 @@ NC='\033[0m' # No Color
 # Global variables
 adapter=""
 pid=""
+TARGET_BSSID=""
+TARGET_MAC=""
+CHANNEL=""
+PACKETS=""
 
 # Function to display adapter options and let user choose
 choose_adapter() {
@@ -79,6 +83,7 @@ choose_targets() {
 # Function to perform the deauthentication attack
 perform_deauth_attack() {
     # Set the channel
+    echo -e "${YELLOW}Setting adapter to channel $CHANNEL...${NC}"
     sudo iwconfig $adapter channel $CHANNEL
 
     # Run the deauth attack
@@ -122,4 +127,3 @@ perform_deauth_attack
 # Clean up airodump-ng process if it is still running
 echo -e "${RED}Terminating airodump-ng process...${NC}"
 kill $pid
-
