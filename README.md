@@ -34,9 +34,11 @@ How to Use
 
 Download the .sh file
 Give permissions:
+
     chmod +x projectdeauthtest.sh
     
 Run the Script: Execute the script in a terminal with root privileges.
+
     sudo ./projectdeauthtest.sh
     
 Choose Network Adapter: Select the network adapter to be used for scanning.
