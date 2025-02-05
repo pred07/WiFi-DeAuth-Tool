@@ -12,8 +12,8 @@ An advanced Python-based tool for managing SSH connections, executing commands, 
 - Libraries listed in `requirements.txt`
 
 ## Usage
-- CLI TOOL: python main.py execute --host <ip>> --username <username> --password <password> --command "<command>"
-    eg: python main.py execute --host 172.18.124.20 --username gr4y --password gray69 --command "ls"
+- CLI TOOL: `python main.py execute --host <ip>> --username <username> --password <password> --command "<command>"`
+    eg: `python main.py execute --host 172.18.124.20 --username gr4y --password gray69 --command "ls"`
 
-- GUI TOOL: python gui.py
+- GUI TOOL: `python gui.py`
 
